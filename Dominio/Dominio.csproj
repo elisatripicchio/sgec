@@ -1,0 +1,41 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Model\AuditoriaModel.cs" />
+    <Compile Remove="Model\CertidaoCreditoModel.cs" />
+    <Compile Remove="Model\ContatoModel.cs" />
+    <Compile Remove="Model\CreditoModel.cs" />
+    <Compile Remove="Model\CreditoSituacaoModel.cs" />
+    <Compile Remove="Model\EnderecoModel.cs" />
+    <Compile Remove="Model\Enumerador.cs" />
+    <Compile Remove="Model\EstadoCreditoModel.cs" />
+    <Compile Remove="Model\HistoricoValorModel.cs" />
+    <Compile Remove="Model\HonorarioModel.cs" />
+    <Compile Remove="Model\IndiceCorrecaoModel.cs" />
+    <Compile Remove="Model\NaturezaCreditoModel.cs" />
+    <Compile Remove="Model\ParteProcessoModel.cs" />
+    <Compile Remove="Model\PostoModel.cs" />
+    <Compile Remove="Model\SituacaoModel.cs" />
+    <Compile Remove="Model\VariacaoIndiceModel.cs" />
+    <Compile Remove="Repositorio\SGECContext.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Abstractions" Version="2.2.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="8.0.6" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.6" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Repositorio\" />
+  </ItemGroup>
+
+</Project>
